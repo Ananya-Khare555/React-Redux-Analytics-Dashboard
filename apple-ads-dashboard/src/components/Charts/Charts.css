@@ -1,0 +1,258 @@
+/* === Shared Card Style (used for Storefronts & Trends) === */
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  margin-bottom: 20px;
+}
+
+/* === Shared Header === */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 6px;
+}
+
+.subtitle-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.plus {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.legend-box {
+  width: 10px;
+  height: 10px;
+  background: #ff6600;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.icons span {
+  margin-left: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #666;
+}
+
+/* === Storefront-specific === */
+.map-container {
+  position: relative;
+  flex: 1;
+}
+
+.zoom-buttons {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.zoom-buttons button {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 5px 8px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.zoom-buttons button:hover {
+  background: #f0f0f0;
+}
+
+.scale-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #555;
+}
+.scale-bar {
+  flex: 1;
+  height: 10px;
+  background: linear-gradient(to right, #ffe0b2, #ff6600);
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+/* === Trends-specific === */
+.trend-footer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  margin-top: 6px;
+  border-top: 1px solid #eee;
+  padding-top: 5px;
+}
+
+/* Make chart fill all vertical space between header and footer */
+.trend-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-body {
+  flex: 1;              /* 🔑 expands chart */
+  min-height: 220px;    /* ensures it never collapses */
+}
+
+/* Section title ("Storefronts", "Trends") */
+.section-title {
+  font-size: 18px;       /* slightly bigger */
+  font-weight: 500;      /* bold */
+  color: #222;           /* darker text */
+  margin-bottom: 12px;
+  letter-spacing: 0.5px; /* spacing between letters */
+}
+
+/* Fancy Top List Table */
+.fancy-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.fancy-table th {
+  text-align: left;
+  padding: 10px;
+  font-weight: 600;
+  color: #444;
+  border-bottom: 1px solid #eee;
+}
+
+.fancy-table td {
+  padding: 10px;
+  border-bottom: 1px solid #f5f5f5;
+  vertical-align: middle;
+}
+
+/* Campaign cell with dot + subtext */
+.campaign-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #2ecc71; /* green */
+  border-radius: 50%;
+}
+.campaign-text small {
+  display: block;
+  font-size: 11px;
+  color: #888;
+}
+
+/* Highlighted cells */
+.highlight-cell {
+  background: #ffe5cc; /* orange tint */
+}
+.highlight-cell.light {
+  background: #f0f8ff; /* light blue tint */
+}
+.cell-main {
+  font-weight: 600;
+}
+.cell-sub {
+  font-size: 11px;
+  color: #888;
+}
+.cell-sub.green {
+  color: #2ecc71;
+}
+
+
+/* Biggest Changes table-like layout */
+.biggest-changes {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.header-row {
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.change-row {
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr; /* Campaign | Bar | Spend */
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #f5f5f5;
+  font-size: 13px;
+}
+
+/* Campaign cell */
+.campaign-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #2ecc71;
+  border-radius: 50%;
+}
+.campaign-text small {
+  display: block;
+  font-size: 11px;
+  color: #888;
+}
+
+/* Bar cell */
+.bar-cell {
+  background: #f5f5f5;
+  height: 12px;
+  border-radius: 6px;
+  position: relative;
+}
+.bar {
+  height: 100%;
+  border-radius: 6px;
+}
+
+/* Spend cell */
+.spend-cell {
+  text-align: right;
+}
+.cell-main {
+  font-weight: 600;
+}
+.cell-sub {
+  font-size: 11px;
+  color: #888;
+}
+.cell-sub.green {
+  color: #2ecc71;
+}

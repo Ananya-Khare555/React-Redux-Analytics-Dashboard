@@ -1,0 +1,64 @@
+.sidebar {
+  width: 60px;
+  background: #ff6600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  color: white;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+/* Top circle/logo */
+.logo {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* Middle nav icons */
+.nav-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-grow: 1;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.nav-icons svg {
+  font-size: 22px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.nav-icons svg:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.nav-icons .active {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Bottom icons */
+.bottom-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.bottom-icons svg {
+  font-size: 22px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.bottom-icons svg:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

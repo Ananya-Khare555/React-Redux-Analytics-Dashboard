@@ -1,0 +1,19 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: stretch; /* 🔑 makes both cards the same height */
+}
+
